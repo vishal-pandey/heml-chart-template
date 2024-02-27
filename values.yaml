@@ -1,8 +1,8 @@
 replicaCount: 1
 name: application-name
-image: bitnami/express:latest
+image: nginx:latest
 gateway: "vishal-gateway"
 host: "'*'"
 configMapData:
-  PORT: '3000'
+  PORT: '80'
   NODE_DEVELOPMENT: "prod"
