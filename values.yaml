@@ -1,0 +1,8 @@
+replicaCount: 1
+name: application-name
+image: bitnami/express:latest
+gateway: "vishal-gateway"
+host: "'*'"
+configMapData:
+  PORT: '3000'
+  NODE_DEVELOPMENT: "prod"
